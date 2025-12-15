@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+    <title>Putri Birthday💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <audio id="lagu" loop autoplay>
+        <source src="monokrom.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="music-box" onclick="toggleMusic()">
+        <i class="fa-solid fa-music"></i>
+    </div>
+
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <div id="wrapper">
+        <div class="flag__birthday">
+            <img src="./images/1.png" alt="" width="350" class="flag__left">
+            <img src="./images/1.png" alt="" width="350" class="flag__right">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">H</span>
+                        <span style="--t: 4.2s;">a</span>
+                        <span style="--t: 4.4s;">p</span>
+                        <span style="--t: 4.6s;">p</span>
+                        <span style="--t: 4.8s;">y</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t: 5s;">B</span>
+                        <span style="--t: 5.2s;">i</span>
+                        <span style="--t: 5.4s;">r</span>
+                        <span style="--t: 5.6s;">t</span>
+                        <span style="--t: 5.8s;">h</span>
+                        <span style="--t: 6s;">d</span>
+                        <span style="--t: 6.2s;">a</span>
+                        <span style="--t: 6.4s;">y</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="./images/hat.png" alt="" width="130">
+                    </div>
+                </div>
+                <div class="date__of__birth">
+                    <span></span>
+                </div>
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            Click Here Bby
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="./images/unnamed.png" alt="">
+                    </div>
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Putri Azahra❤️</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="./images/balloon1.png" alt="">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="./images/balloon2.png" alt="">
+                    </div>
+                </div>
+                <div class="polaroid-gallery">
+                    <div class="polaroid-card">
+                        <img src="./images/foto1.png" alt="Foto 1">
+                        <span>You're</span>
+                    </div>
+                    <div class="polaroid-card">
+                        <img src="./images/foto2.png" alt="Foto 2">
+                        <span>My</span>
+                    </div>
+                    <div class="polaroid-card">
+                        <img src="./images/foto3.png" alt="Foto 3">
+                        <span>Sunshine</span>
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">h</span>
+                        <span style="--i: 2;">a</span>
+                        <span style="--i: 3;">p</span>
+                        <span style="--i: 4;">p</span>
+                        <span style="--i: 5;">y</span>
+                        <span style="--i: 6;">-</span>
+                        <span style="--i: 7;">b</span>
+                        <span style="--i: 8;">i</span>
+                        <span style="--i: 9;">r</span>
+                        <span style="--i: 10;">t</span>
+                        <span style="--i: 11;">h</span>
+                        <span style="--i: 12;">d</span>
+                        <span style="--i: 13;">a</span>
+                        <span style="--i: 14;">y</span>
+                        <span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_bottom">
+            <img src="./images/decorate.png" alt="" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="./images/smiley_icon.png" alt="" width="100">
+        </div>
+
+   </div>
+    </div> <script>
+        document.addEventListener('mousemove', function(e) {
+            createCursorTrail(e.clientX, e.clientY);
+        });
+
+        document.addEventListener('touchmove', function(e) {
+            createCursorTrail(e.touches[0].clientX, e.touches[0].clientY);
+        });
+
+        function createCursorTrail(x, y) {
+            let trail = document.createElement('div');
+            trail.className = 'cursor-trail';
+            trail.style.left = x + 'px';
+            trail.style.top = y + 'px';
+            
+            // Warna-warni random (opsional, kalau mau pink aja hapus baris ini)
+            const colors = ['#FF7882', '#ff9a9e', '#feecea', '#FFD700'];
+            trail.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+            document.body.appendChild(trail);
+
+            setTimeout(() => {
+                trail.remove();
+            }, 1000);
+        }
+    </script>
+        <div class="box__letter">
+            <div class="letter__border">
+                <div class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="letter">
+                    <div class="title__letter"></div>
+                    <div class="content__letter">
+                        <div class="left">
+                            <img id="heart__letter" src="./images/heart_letter.png" alt="">
+                            <img class="heart heart_1" src="./images/heart.png" style="--t: 0.2s" width="20" alt="">
+                            <img class="heart heart_2" src="./images/heart.png" style="--t: 0.4s" width="20" alt="">
+                            <img class="heart heart_3" src="./images/heart.png" style="--t: 0.6s" width="20" alt="">
+                            <img class="heart heart_4" src="./images/heart.png" style="--t: 0.8s" width="20" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="love__img">
+                                <img src="./images/love.png" alt="" width="220">
+                            </div>
+                            <div class="text__letter">
+                                <p></p>
+                            </div>
+                            <img id="mewmew" width="80" src="./images/mewmew.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="loading-overlay"></div>
+</body>
+<script>
+    // --- SCRIPT UNTUK MEMBUAT HATI MELAYANG (BARU) ---
+    const floatingHeartsContainer = document.getElementById('floatingHearts');
+    const heartEmojis = ['❤️', '💕', '💖', '💗', '💓', '💝'];
+    
+    function createFloatingHeart() {
+        const heart = document.createElement('div');
+        heart.className = 'float-heart';
+        heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+        heart.style.left = Math.random() * 100 + '%';
+        heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
+        heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+        heart.style.animationDelay = Math.random() * 5 + 's';
+        floatingHeartsContainer.appendChild(heart);
+        
+        // Hapus elemen setelah animasi selesai agar tidak memberatkan browser
+        setTimeout(() => heart.remove(), 13000);
+    }
+    
+    // Buat hati baru setiap 0.5 detik
+    setInterval(createFloatingHeart, 500);
+    // --------------------------------------------------
+
+
+    let datetxt = "17 December";
+    let datatxtletter = "It's 21 My luvv. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you sunshine.💕";
+    let titleLetter = "To you my princess";
+    let charArrDate = datetxt.split('');
+    let charArrDateLetter = datatxtletter.split('');
+    let charArrTitle = titleLetter.split('');
+    let currentIndex = 0;
+    let currentIndexLetter = 0;
+    let currentIndexTitle = 0;
+    let date__of__birth = document.querySelector(".date__of__birth span");
+    let text__letter = document.querySelector(".text__letter p");
+    
+    setTimeout(function () {
+        timeDatetxt = setInterval(function () {
+            if (currentIndex < charArrDate.length) {
+                date__of__birth.textContent += charArrDate[currentIndex];
+                currentIndex++;
+            }
+            else {
+                let i = document.createElement("i");
+                i.className = "fa-solid fa-star"
+                document.querySelector(".date__of__birth").prepend(i)
+                document.querySelector(".date__of__birth").appendChild(i.cloneNode(true))
+                clearInterval(timeDatetxt)
+            }
+        }, 100)
+    }, 12000)
+
+    var intervalContent;
+    var intervalTitle;
+    
+    // --- LOGIKA MUSIK ---
+    var audio = document.getElementById("lagu");
+    var musicBox = document.querySelector(".music-box");
+    
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            musicBox.classList.add("playing"); 
+            musicBox.style.animationPlayState = "running";
+        } else {
+            audio.pause();
+            musicBox.classList.remove("playing");
+            musicBox.style.animationPlayState = "paused";
+        }
+    }
+    // -------------------
+
+// --- FUNGSI CONFETTI HATI ---
+function createHeartConfetti() {
+        const colors = ['#FF7882', '#ff9a9e', '#d4505a', '#FFD700', '#FFF'];
+        const emojis = ['❤️', '💖', '💕', '💗', '💝'];
+
+        for (let i = 0; i < 50; i++) { // Buat 50 hati sekaligus
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti-heart';
+            confetti.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            
+            // Arah penyebaran acak
+            const angle = Math.random() * 360; 
+            const distance = Math.random() * 300 + 50; // Jarak sebar 50px - 350px
+            
+            // Konversi polar ke koordinat X/Y
+            const x = Math.cos(angle * (Math.PI / 180)) * distance + 'px';
+            const y = Math.sin(angle * (Math.PI / 180)) * distance + 'px';
+            const r = (Math.random() * 360) + 'deg'; // Rotasi acak
+
+            // Set variabel CSS
+            confetti.style.setProperty('--x', x);
+            confetti.style.setProperty('--y', y);
+            confetti.style.setProperty('--r', r);
+            
+            document.body.appendChild(confetti);
+
+            // Hapus elemen setelah animasi selesai
+            setTimeout(() => confetti.remove(), 1200);
+        }
+    }
+
+    $("#btn__letter").on("click", function () {
+        
+        // 1. Play Music
+        if(audio.paused){
+            audio.play();
+            musicBox.classList.add("playing");
+            musicBox.style.animationPlayState = "running";
+        }
+
+        // 2. Tampilkan Overlay
+        const overlay = document.getElementById('loading-overlay');
+        overlay.style.display = 'block';
+
+        // Trik: Langsung picu warna background jadi pink solid (durasi 1.5 detik sesuai CSS)
+        // Ini yang bikin layar tertutup mulus tanpa lag
+        setTimeout(() => {
+            overlay.classList.add('active');
+        }, 50);
+
+        // 3. FUNGSI BADAI HATI (VERSI RINGAN)
+        let heartCount = 0;
+        const maxHearts = 30; // Cukup 30 hati saja (tapi ukurannya besar)
+        
+        const stormInterval = setInterval(() => {
+            if (heartCount >= maxHearts) {
+                clearInterval(stormInterval);
+                
+                // 4. BUKA SURAT SETELAH LAYAR TERTUTUP (1.5 detik)
+                setTimeout(() => {
+                    overlay.style.display = 'none'; 
+                    overlay.classList.remove('active');
+                    overlay.innerHTML = ''; 
+                    
+                    // --- ANIMASI BUKA SURAT ---
+                    $(".box__letter").slideDown();
+                    setTimeout(function () {
+                        $(".letter__border").slideDown();
+                    }, 1000);
+                    setTimeout(function () {
+                        intervalTitle = setInterval(function () {
+                            if (currentIndexTitle < charArrTitle.length) {
+                                document.querySelector(".title__letter").textContent += charArrTitle[currentIndexTitle];
+                                let i = document.createElement("i");
+                                i.className = "fa-solid fa-heart";
+                                document.querySelector(".title__letter").appendChild(i);
+                                currentIndexTitle++;
+                            } else {
+                                clearInterval(intervalTitle);
+                            }
+                        }, 100);
+                    }, 2000);
+                    setTimeout(function () {
+                        document.querySelector("#heart__letter").classList.add("animationOp");
+                        document.querySelector(".love__img").classList.add("animationOp");
+                        document.querySelector("#mewmew").classList.add("animationOp");
+                    }, 2800);
+                    setTimeout(function () {
+                        document.querySelectorAll(".heart").forEach((item) => {
+                            item.classList.add("animation");
+                        });
+                    }, 3500);
+                    setTimeout(function () {
+                        intervalContent = setInterval(function () {
+                            if (currentIndexLetter < charArrDateLetter.length) {
+                                text__letter.textContent += charArrDateLetter[currentIndexLetter];
+                                currentIndexLetter++;
+                            } else {
+                                clearInterval(intervalContent);
+                            }
+                        }, 50);
+                    }, 6000);
+                    // --------------------------
+
+                }, 1600); // Tunggu sampai animasi background selesai
+            }
+
+            // Spawn Hati
+            const heart = document.createElement('div');
+            heart.classList.add('filling-heart');
+            const emojis = ['❤️', '💖', '💕', '💗'];
+            heart.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            
+            // Posisi & Rotasi Acak
+            heart.style.left = Math.random() * 90 + 5 + 'vw'; // Biar gak terlalu pinggir
+            heart.style.top = Math.random() * 90 + 5 + 'vh';
+            
+            // Set variabel rotasi untuk CSS
+            const randomRotation = (Math.random() * 90 - 45) + 'deg';
+            heart.style.setProperty('--r', randomRotation);
+            
+            overlay.appendChild(heart);
+            heartCount++;
+
+        }, 40); // Interval 40ms (lebih santai buat CPU)
+    });
+        $(".close").on("click", function () {
+        clearInterval(intervalContent)
+        document.querySelector(".title__letter").textContent = "";
+        text__letter.textContent = "";
+        currentIndexLetter = 0
+        currentIndexTitle = 0
+        document.querySelector("#heart__letter").classList.remove("animationOp");
+        document.querySelector(".love__img").classList.remove("animationOp");
+        document.querySelector("#mewmew").classList.remove("animationOp");
+        document.querySelectorAll(".heart").forEach((item) => {
+            item.classList.remove("animation")
+        })
+        $(".box__letter").slideUp();
+        $(".letter__border").slideUp();
+    })
+
+
+
+    let mailBox = document.querySelector('.mail')
+    let boxmail = document.querySelector('.boxMail')
+    var close = document.querySelector('.fa-xmark')
+    mailBox.onclick = function () {
+        mailBox.classList.toggle('active')
+        boxmail.classList.add('active')
+    }
+
+    close.addEventListener('click', function () {
+        boxmail.classList.remove('active')
+    })
+    // --- SCRIPT MUSIK OTOMATIS (AUTOPLAY) ---
+    var audio = document.getElementById("lagu");
+    var musicBox = document.querySelector(".music-box");
+
+    function playMusic() {
+        if (audio.paused) {
+            audio.play().then(() => {
+                // Jika berhasil play
+                musicBox.classList.add("playing");
+                musicBox.style.animationPlayState = "running";
+            }).catch((error) => {
+                console.log("Autoplay dicegah browser, menunggu interaksi user.");
+            });
+        }
+    }
+
+    // 1. Coba putar langsung saat web diload
+    window.addEventListener('load', playMusic);
+
+    // 2. Putar saat ada sentuhan pertama (jika yang pertama gagal)
+    document.addEventListener('click', playMusic, { once: true });
+    document.addEventListener('touchstart', playMusic, { once: true });
+    document.addEventListener('scroll', playMusic, { once: true });
+
+    // --- LOGIKA TOMBOL MUSIK (MANUAL) ---
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            musicBox.classList.add("playing");
+            musicBox.style.animationPlayState = "running";
+        } else {
+            audio.pause();
+            musicBox.classList.remove("playing");
+            musicBox.style.animationPlayState = "paused";
+        }
+    }
+</script>
+
+</html>
